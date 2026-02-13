@@ -11,7 +11,7 @@ Static multi-page portfolio optimized for recruiter and hiring-manager review.
 - `404.html` - custom not-found page for GitHub Pages.
 - `assets/css/styles.css` - shared design system and responsive layout.
 - `assets/js/main.js` - nav state, reveal motion, reduced-motion handling, headshot fallback.
-- `assets/img/headshot.jpg` - add your headshot here.
+- `assets/img/headshot.JPG` - add your headshot here.
 - `sitemap.xml` and `robots.txt` - crawl and indexing helpers.
 - `.nojekyll` - ensures static assets and paths are served without Jekyll processing.
 - `.github/workflows/pages.yml` - optional automatic deployment pipeline for GitHub Pages.
@@ -28,7 +28,7 @@ Open `http://localhost:8000`.
 
 ## Personalization Checklist
 
-1. Add your headshot to `assets/img/headshot.jpg`.
+1. Add your headshot to `assets/img/headshot.JPG`.
 2. Replace canonical/OG URLs in each HTML file with your real GitHub Pages URL.
 3. Confirm LinkedIn URL and contact email.
 4. Replace `https://your-username.github.io/nikita-webpage` in `robots.txt` and `sitemap.xml`.
