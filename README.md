@@ -11,6 +11,7 @@ Static multi-page portfolio optimized for recruiter and hiring-manager review.
 - `404.html` - custom not-found page for GitHub Pages.
 - `assets/css/styles.css` - shared design system and responsive layout.
 - `assets/js/main.js` - nav state, reveal motion, reduced-motion handling, headshot fallback.
+- `assets/js/analytics.js` - consent-gated visitor analytics (pageviews, engagement, click tracking, optional GA4/Clarity/geo/custom endpoint).
 - `assets/img/headshot.JPG` - add your headshot here.
 - `sitemap.xml` and `robots.txt` - crawl and indexing helpers.
 - `.nojekyll` - ensures static assets and paths are served without Jekyll processing.
@@ -25,6 +26,40 @@ python3 -m http.server 8000
 ```
 
 Open `http://localhost:8000`.
+
+## Analytics and Advanced Visitor Tracking
+
+Tracking is now wired into all pages through `assets/js/analytics.js`.
+
+### Included out of the box
+
+- Consent banner with allow/decline controls.
+- Anonymous `visitor_id` (persistent) and `session_id` (per-tab session).
+- `page_view`, `cta_click`, `contact_click`, `outbound_click`, and `file_download` events.
+- Engagement metrics: `scroll_depth`, `engaged_30s`, `page_exit`, and `performance_summary`.
+- Optional geo-enrichment (`geo_resolved`) from an IP geolocation API.
+- Optional forwarding to:
+  - Google Analytics 4 (GA4)
+  - Microsoft Clarity
+  - a custom analytics endpoint (via `sendBeacon` / `fetch`)
+
+### Configure it
+
+Each page contains a `window.NikitaTrackingConfig` block near the bottom.
+
+Set these values:
+
+- `ga4MeasurementId`: set to your GA4 id (example: `G-ABCDE12345`)
+- `clarityProjectId`: set to your Clarity project id
+- `customEndpoint`: set to your backend collector URL (optional)
+- `geoLookup.enabled`: set `true` to enable geo lookup
+- `geoLookup.url`: API endpoint returning JSON with fields like city/region/country
+
+If you want tracking without consent gating, set:
+
+- `requireConsent: false`
+
+Recommended: keep `requireConsent: true` and publish a short privacy notice page.
 
 ## Personalization Checklist
 
