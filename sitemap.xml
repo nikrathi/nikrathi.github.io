@@ -25,6 +25,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://your-username.github.io/nikita-webpage/case-studies/kyc-transformation.html</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://your-username.github.io/nikita-webpage/404.html</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>yearly</changefreq>

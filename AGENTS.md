@@ -12,6 +12,7 @@
 - `experience.html`: detailed timeline.
 - `case-studies/aml-transformation.html`: AML case study.
 - `case-studies/baas-growth.html`: BaaS case study.
+- `case-studies/kyc-transformation.html`: global KYC transformation case study.
 - `404.html`: custom not-found page.
 - `robots.txt` + `sitemap.xml`: crawl/indexing metadata.
 - `.github/workflows/pages.yml`: optional GitHub Actions Pages deployment.
@@ -32,7 +33,7 @@
   - Root pages (`index.html`, `experience.html`) reference `assets/...`
   - Case-study pages reference `../assets/...`
 - Maintain `body[data-nav]` values and matching `data-nav-link` values:
-  - `home`, `experience`, `aml-case`, `baas-case`
+  - `home`, `experience`, `aml-case`, `baas-case`, `kyc-case`
 - If adding a section that should animate in, add `data-reveal`.
 
 ## JS Coupling Notes (`assets/js/main.js`)
@@ -52,6 +53,7 @@
   - `experience.html`
   - `case-studies/aml-transformation.html`
   - `case-studies/baas-growth.html`
+  - `case-studies/kyc-transformation.html`
   - `robots.txt`
   - `sitemap.xml`
 - Keep `sitemap.xml` `lastmod` values current when content changes.
