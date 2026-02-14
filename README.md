@@ -9,6 +9,7 @@ Static multi-page portfolio optimized for recruiter and hiring-manager review.
 - `case-studies/aml-transformation.html` - AML transformation case study.
 - `case-studies/baas-growth.html` - BaaS growth case study.
 - `case-studies/kyc-transformation.html` - global KYC transformation case study.
+- `case-studies/trade-surveillance.html` - trade surveillance product case study.
 - `404.html` - custom not-found page for GitHub Pages.
 - `assets/css/styles.css` - shared design system and responsive layout.
 - `assets/js/main.js` - nav state, reveal motion, reduced-motion handling, headshot fallback.
